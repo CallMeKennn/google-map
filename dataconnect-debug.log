@@ -1,0 +1,15 @@
+I1107 08:37:48.954171   17388 load.go:37] Reloading schema and connectors...
+I1107 08:37:48.963603   17388 control.go:45] [engine.Service /emulator/google-map 4993] UpdateSchema(): done sources: schema\schema.gql [1383B] 
+I1107 08:37:48.969109   17388 control.go:73] [engine.Service /emulator/google-map 4993] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+I1107 08:37:48.987126   17388 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect-generated\\js\\default-connector"
+I1107 08:37:48.988765   17388 collector.go:107] schema extensions wrote into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [61293B] 
+I1107 08:37:48.988765   17388 collector.go:114] schema extensions deleted obsolete file "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect\\.dataconnect\\schema\\schema.gql"
+I1107 08:37:48.991793   17388 collector.go:107] connector "default" javascriptSdk wrote into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect-generated\\js\\default-connector"
+Generated sources: index.cjs.js [224B] package.json [623B] index.d.ts [264B] esm\index.esm.js [183B] esm\package.json [17B] 
+I1107 08:37:49.001048   17388 installsdk.go:76] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector
+I1107 08:37:51.775502   17388 load.go:115] Finished reloading
+I1107 08:37:51.777083   17388 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+I1107 08:37:51.777083   17388 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
+I1107 08:37:52.605936   17388 control.go:45] [engine.Service /emulator/google-map 1727] UpdateSchema(): done sources: schema\schema.gql [1383B] 
+I1107 08:37:52.606447   17388 control.go:73] [engine.Service /emulator/google-map 1727] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 

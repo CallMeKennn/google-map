@@ -1,0 +1,563 @@
+[debug] [2024-11-06T09:45:22.615Z] ----------------------------------------------------------------------
+[debug] [2024-11-06T09:45:22.618Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\CONG PHAM\AppData\Local\npm-cache\_npx\ba4f1959e38407b5\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --project map-2ef9f
+[debug] [2024-11-06T09:45:22.618Z] CLI Version:   13.24.1
+[debug] [2024-11-06T09:45:22.619Z] Platform:      win32
+[debug] [2024-11-06T09:45:22.619Z] Node Version:  v20.17.0
+[debug] [2024-11-06T09:45:22.619Z] Time:          Wed Nov 06 2024 16:45:22 GMT+0700 (Indochina Time)
+[debug] [2024-11-06T09:45:22.619Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-06T09:45:22.691Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-06T09:45:22.691Z] > authorizing via signed-in user (huyhoang13199@gmail.com)
+[info] i  emulators: Starting emulators: dataconnect {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: dataconnect"}}
+[debug] [2024-11-06T09:45:22.709Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-06T09:45:22.709Z] [dataconnect.postgres] postgres server for dataconnect only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-06T09:45:22.709Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"dataconnect":[{"address":"127.0.0.1","family":"IPv4","port":9399},{"address":"::1","family":"IPv6","port":9399}],"dataconnect.postgres":[{"address":"127.0.0.1","family":"IPv4","port":5432}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-11-06T09:45:22.713Z] [hub] writing locator at C:\Users\CONGPH~1\AppData\Local\Temp\hub-map-2ef9f.json
+[debug] [2024-11-06T09:45:22.778Z] I1106 16:45:22.767405   12740 control.go:45] [engine.Service /emulator/google-map 1bf9] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+I1106 16:45:22.774601   12740 control.go:73] [engine.Service /emulator/google-map 1bf9] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 16:45:22.767405   12740 control.go:45] [engine.Service /emulator/google-map 1bf9] UpdateSchema(): done sources: schema\\schema.gql [1384B] \nI1106 16:45:22.774601   12740 control.go:73] [engine.Service /emulator/google-map 1bf9] UpdateConnector(default): done sources: connector\\mutations.gql [1163B] connector\\queries.gql [1855B] \n"}}
+[debug] [2024-11-06T09:45:22.794Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-06T09:45:22.794Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-11-06T09:45:22.794Z] Starting Data Connect Emulator with command {"binary":"C:\\Users\\CONG PHAM\\.cache\\firebase\\emulators\\dataconnect-emulator-1.6.0.exe","args":["--logtostderr","-v=2","dev","--listen=127.0.0.1:9399,[::1]:9399","--config_dir=C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"C:\\\\Users\\\\CONG PHAM\\\\.cache\\\\firebase\\\\emulators\\\\dataconnect-emulator-1.6.0.exe\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=127.0.0.1:9399,[::1]:9399\",\"--config_dir=C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to \u001b[1mdataconnect-debug.log\u001b[22m"}}
+[debug] [2024-11-06T09:45:22.868Z] I1106 16:45:22.826307   14216 load.go:37] Reloading schema and connectors...
+I1106 16:45:22.835378   14216 control.go:45] [engine.Service /emulator/google-map 96d4] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+I1106 16:45:22.842747   14216 control.go:73] [engine.Service /emulator/google-map 96d4] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+I1106 16:45:22.860254   14216 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect-generated\\js\\default-connector"
+I1106 16:45:22.862104   14216 collector.go:107] schema extensions wrote into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [61293B] 
+I1106 16:45:22.863124   14216 collector.go:107] connector "default" javascriptSdk wrote into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect-generated\\js\\default-connector"
+Generated sources: esm\index.esm.js [183B] esm\package.json [17B] index.cjs.js [224B] package.json [623B] index.d.ts [264B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 16:45:22.826307   14216 load.go:37] Reloading schema and connectors...\nI1106 16:45:22.835378   14216 control.go:45] [engine.Service /emulator/google-map 96d4] UpdateSchema(): done sources: schema\\schema.gql [1384B] \nI1106 16:45:22.842747   14216 control.go:73] [engine.Service /emulator/google-map 96d4] UpdateConnector(default): done sources: connector\\mutations.gql [1163B] connector\\queries.gql [1855B] \nI1106 16:45:22.860254   14216 codegen.go:82] [connector \"default\" javascriptSdk] Generating sources into \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect-generated\\\\js\\\\default-connector\"\nI1106 16:45:22.862104   14216 collector.go:107] schema extensions wrote into \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect\\\\.dataconnect\\\\schema\"\nGenerated sources: prelude.gql [61293B] \nI1106 16:45:22.863124   14216 collector.go:107] connector \"default\" javascriptSdk wrote into \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect-generated\\\\js\\\\default-connector\"\nGenerated sources: esm\\index.esm.js [183B] esm\\package.json [17B] index.cjs.js [224B] package.json [623B] index.d.ts [264B] \n"}}
+[debug] [2024-11-06T09:45:22.870Z] I1106 16:45:22.869838   14216 installsdk.go:76] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 16:45:22.869838   14216 installsdk.go:76] Running command: C:\\Program Files\\nodejs\\npm.cmd install file:dataconnect-generated\\js\\default-connector\n"}}
+[debug] [2024-11-06T09:45:24.326Z] [Data Connect] Connecting to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}...
+[debug] [2024-11-06T09:45:24.328Z] >>> [apiv2][query] POST http://127.0.0.1:9399/emulator/configure [none]
+[debug] [2024-11-06T09:45:24.328Z] >>> [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {"connectionString":"postgres://127.0.0.1:5432/fdcdb?sslmode=disable","database":"fdcdb","serviceId":"google-map","maxOpenConnections":1}
+[debug] [2024-11-06T09:45:24.334Z] *** [apiv2] error from fetch(http://127.0.0.1:9399/emulator/configure, {"headers":{},"method":"POST","body":"{\"connectionString\":\"postgres://127.0.0.1:5432/fdcdb?sslmode=disable\",\"database\":\"fdcdb\",\"serviceId\":\"google-map\",\"maxOpenConnections\":1}"}): FetchError: request to http://127.0.0.1:9399/emulator/configure failed, reason: connect ECONNREFUSED 127.0.0.1:9399
+[debug] [2024-11-06T09:45:24.334Z] [Data Connect] Retrying connectToPostgress call (1 of 3 attempts): FirebaseError: Data Connect emulator: undefined
+[debug] [2024-11-06T09:45:25.317Z] I1106 16:45:25.317702   14216 load.go:115] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 16:45:25.317702   14216 load.go:115] Finished reloading\n"}}
+[debug] [2024-11-06T09:45:25.318Z] I1106 16:45:25.318283   14216 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 16:45:25.318283   14216 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399\n"}}
+[debug] [2024-11-06T09:45:25.319Z] I1106 16:45:25.318878   14216 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 16:45:25.318878   14216 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399\n"}}
+[debug] [2024-11-06T09:45:26.344Z] [Data Connect] Connecting to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}...
+[debug] [2024-11-06T09:45:26.344Z] >>> [apiv2][query] POST http://127.0.0.1:9399/emulator/configure [none]
+[debug] [2024-11-06T09:45:26.345Z] >>> [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {"connectionString":"postgres://127.0.0.1:5432/fdcdb?sslmode=disable","database":"fdcdb","serviceId":"google-map","maxOpenConnections":1}
+[debug] [2024-11-06T09:45:26.353Z] Frontend message 
+[debug] [2024-11-06T09:45:26.355Z] Backend message AuthenticationResponse
+[debug] [2024-11-06T09:45:26.356Z] Backend message ParameterStatus
+[debug] [2024-11-06T09:45:26.357Z] Backend message ReadyForQuery
+[debug] [2024-11-06T09:45:26.357Z] Frontend message Query
+[debug] [2024-11-06T09:45:26.358Z] Backend message EmptyQuery
+[debug] [2024-11-06T09:45:26.358Z] Backend message ReadyForQuery
+[debug] [2024-11-06T09:45:26.366Z] Frontend message Query
+[debug] [2024-11-06T09:45:26.370Z] Backend message RowDescriptionMessage
+[debug] [2024-11-06T09:45:26.371Z] Backend message DataRow
+[debug] [2024-11-06T09:45:26.372Z] Backend message CommandComplete
+[debug] [2024-11-06T09:45:26.372Z] Backend message ReadyForQuery
+[debug] [2024-11-06T09:45:26.372Z] Frontend message Parse
+[debug] [2024-11-06T09:45:26.373Z] Backend message ParseComplete
+[debug] [2024-11-06T09:45:26.373Z] Frontend message Describe
+[debug] [2024-11-06T09:45:26.373Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-06T09:45:26.374Z] Backend message RowDescriptionMessage
+[debug] [2024-11-06T09:45:26.374Z] Frontend message Sync
+[debug] [2024-11-06T09:45:26.374Z] Backend message ReadyForQuery
+[debug] [2024-11-06T09:45:26.374Z] Frontend message Bind
+[debug] [2024-11-06T09:45:26.375Z] Backend message BindComplete
+[debug] [2024-11-06T09:45:26.375Z] Frontend message Execute
+[debug] [2024-11-06T09:45:26.376Z] Backend message DataRow
+[debug] [2024-11-06T09:45:26.376Z] Backend message CommandComplete
+[debug] [2024-11-06T09:45:26.376Z] Frontend message Sync
+[debug] [2024-11-06T09:45:26.377Z] Backend message ReadyForQuery
+[debug] [2024-11-06T09:45:26.377Z] Frontend message Parse
+[debug] [2024-11-06T09:45:26.378Z] Backend message ParseComplete
+[debug] [2024-11-06T09:45:26.378Z] Frontend message Describe
+[debug] [2024-11-06T09:45:26.378Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-06T09:45:26.378Z] Backend message RowDescriptionMessage
+[debug] [2024-11-06T09:45:26.378Z] Frontend message Sync
+[debug] [2024-11-06T09:45:26.378Z] Backend message ReadyForQuery
+[debug] [2024-11-06T09:45:26.379Z] Frontend message Bind
+[debug] [2024-11-06T09:45:26.380Z] Backend message BindComplete
+[debug] [2024-11-06T09:45:26.380Z] Frontend message Execute
+[debug] [2024-11-06T09:45:26.380Z] Backend message CommandComplete
+[debug] [2024-11-06T09:45:26.380Z] Frontend message Sync
+[debug] [2024-11-06T09:45:26.381Z] Backend message ReadyForQuery
+[debug] [2024-11-06T09:45:26.381Z] Frontend message Parse
+[debug] [2024-11-06T09:45:26.382Z] Backend message ParseComplete
+[debug] [2024-11-06T09:45:26.382Z] Frontend message Describe
+[debug] [2024-11-06T09:45:26.382Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-06T09:45:26.382Z] Backend message RowDescriptionMessage
+[debug] [2024-11-06T09:45:26.383Z] Frontend message Sync
+[debug] [2024-11-06T09:45:26.383Z] Backend message ReadyForQuery
+[debug] [2024-11-06T09:45:26.383Z] Frontend message Bind
+[debug] [2024-11-06T09:45:26.389Z] Backend message BindComplete
+[debug] [2024-11-06T09:45:26.389Z] Frontend message Execute
+[debug] [2024-11-06T09:45:26.390Z] Backend message CommandComplete
+[debug] [2024-11-06T09:45:26.390Z] Frontend message Sync
+[debug] [2024-11-06T09:45:26.390Z] Backend message ReadyForQuery
+[debug] [2024-11-06T09:45:26.391Z] Frontend message Query
+[debug] [2024-11-06T09:45:26.392Z] Backend message RowDescriptionMessage
+[debug] [2024-11-06T09:45:26.392Z] Backend message DataRow
+[debug] [2024-11-06T09:45:26.392Z] Backend message CommandComplete
+[debug] [2024-11-06T09:45:26.392Z] Backend message ReadyForQuery
+[debug] [2024-11-06T09:45:26.393Z] Frontend message Parse
+[debug] [2024-11-06T09:45:26.393Z] Backend message ParseComplete
+[debug] [2024-11-06T09:45:26.393Z] Frontend message Describe
+[debug] [2024-11-06T09:45:26.394Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-06T09:45:26.394Z] Backend message RowDescriptionMessage
+[debug] [2024-11-06T09:45:26.394Z] Frontend message Sync
+[debug] [2024-11-06T09:45:26.394Z] Backend message ReadyForQuery
+[debug] [2024-11-06T09:45:26.395Z] Frontend message Bind
+[debug] [2024-11-06T09:45:26.395Z] Backend message BindComplete
+[debug] [2024-11-06T09:45:26.395Z] Frontend message Execute
+[debug] [2024-11-06T09:45:26.396Z] Backend message DataRow
+[debug] [2024-11-06T09:45:26.396Z] Backend message CommandComplete
+[debug] [2024-11-06T09:45:26.396Z] Frontend message Sync
+[debug] [2024-11-06T09:45:26.396Z] Backend message ReadyForQuery
+[debug] [2024-11-06T09:45:26.397Z] Frontend message Parse
+[debug] [2024-11-06T09:45:26.398Z] Backend message ParseComplete
+[debug] [2024-11-06T09:45:26.398Z] Frontend message Describe
+[debug] [2024-11-06T09:45:26.398Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-06T09:45:26.398Z] Backend message RowDescriptionMessage
+[debug] [2024-11-06T09:45:26.398Z] Frontend message Sync
+[debug] [2024-11-06T09:45:26.399Z] Backend message ReadyForQuery
+[debug] [2024-11-06T09:45:26.399Z] Frontend message Bind
+[debug] [2024-11-06T09:45:26.400Z] Backend message BindComplete
+[debug] [2024-11-06T09:45:26.400Z] Frontend message Execute
+[debug] [2024-11-06T09:45:26.400Z] Backend message CommandComplete
+[debug] [2024-11-06T09:45:26.400Z] Frontend message Sync
+[debug] [2024-11-06T09:45:26.401Z] Backend message ReadyForQuery
+[debug] [2024-11-06T09:45:26.401Z] Frontend message Parse
+[debug] [2024-11-06T09:45:26.402Z] Backend message ParseComplete
+[debug] [2024-11-06T09:45:26.402Z] Frontend message Describe
+[debug] [2024-11-06T09:45:26.402Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-06T09:45:26.403Z] Backend message RowDescriptionMessage
+[debug] [2024-11-06T09:45:26.403Z] Frontend message Sync
+[debug] [2024-11-06T09:45:26.403Z] Backend message ReadyForQuery
+[debug] [2024-11-06T09:45:26.404Z] Frontend message Bind
+[debug] [2024-11-06T09:45:26.410Z] Backend message BindComplete
+[debug] [2024-11-06T09:45:26.410Z] Frontend message Execute
+[debug] [2024-11-06T09:45:26.411Z] Backend message CommandComplete
+[debug] [2024-11-06T09:45:26.411Z] Frontend message Sync
+[debug] [2024-11-06T09:45:26.411Z] Backend message ReadyForQuery
+[debug] [2024-11-06T09:45:26.412Z] Frontend message Query
+[debug] [2024-11-06T09:45:26.412Z] Backend message RowDescriptionMessage
+[debug] [2024-11-06T09:45:26.412Z] Backend message DataRow
+[debug] [2024-11-06T09:45:26.412Z] Backend message CommandComplete
+[debug] [2024-11-06T09:45:26.413Z] Backend message ReadyForQuery
+[debug] [2024-11-06T09:45:26.413Z] I1106 16:45:26.412941   14216 control.go:45] [engine.Service /emulator/google-map af8b] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+I1106 16:45:26.413448   14216 control.go:73] [engine.Service /emulator/google-map af8b] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 16:45:26.412941   14216 control.go:45] [engine.Service /emulator/google-map af8b] UpdateSchema(): done sources: schema\\schema.gql [1384B] \nI1106 16:45:26.413448   14216 control.go:73] [engine.Service /emulator/google-map af8b] UpdateConnector(default): done sources: connector\\mutations.gql [1163B] connector\\queries.gql [1855B] \n"}}
+[debug] [2024-11-06T09:45:26.418Z] <<< [apiv2][status] POST http://127.0.0.1:9399/emulator/configure 200
+[debug] [2024-11-06T09:45:26.418Z] <<< [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {}
+[debug] [2024-11-06T09:45:26.418Z] [Data Connect] Successfully connected to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[debug] [2024-11-06T09:45:26.426Z] >>> [apiv2][query] GET http://127.0.0.1:9399/emulator/info [none]
+[debug] [2024-11-06T09:45:26.429Z] <<< [apiv2][status] GET http://127.0.0.1:9399/emulator/info 200
+[debug] [2024-11-06T09:45:26.429Z] <<< [apiv2][body] GET http://127.0.0.1:9399/emulator/info {"version":"","services":[{"serviceId":"google-map","connectionString":"dbname='fdcdb' host='127.0.0.1' port='5432' sslmode='disable' dbname='fdcdb'"}]}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────────┬────────────────┐
+│ Emulator     │ Host:Port      │
+├──────────────┼────────────────┤
+│ Data Connect │ 127.0.0.1:9399 │
+└──────────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-11-06T10:03:23.105Z] I1106 17:03:23.104110   14216 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:03:23.104110   14216 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-11-06T10:03:23.127Z] Frontend message Query
+[debug] [2024-11-06T10:03:23.131Z] Backend message RowDescriptionMessage
+[debug] [2024-11-06T10:03:23.132Z] Backend message DataRow
+[debug] [2024-11-06T10:03:23.132Z] Backend message CommandComplete
+[debug] [2024-11-06T10:03:23.132Z] Backend message ReadyForQuery
+[debug] [2024-11-06T10:03:23.133Z] Frontend message Parse
+[debug] [2024-11-06T10:03:23.134Z] Backend message ParseComplete
+[debug] [2024-11-06T10:03:23.134Z] Frontend message Describe
+[debug] [2024-11-06T10:03:23.134Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-06T10:03:23.134Z] Backend message RowDescriptionMessage
+[debug] [2024-11-06T10:03:23.135Z] Frontend message Sync
+[debug] [2024-11-06T10:03:23.135Z] Backend message ReadyForQuery
+[debug] [2024-11-06T10:03:23.135Z] Frontend message Bind
+[debug] [2024-11-06T10:03:23.136Z] Backend message BindComplete
+[debug] [2024-11-06T10:03:23.137Z] Frontend message Execute
+[debug] [2024-11-06T10:03:23.137Z] Backend message DataRow
+[debug] [2024-11-06T10:03:23.137Z] Backend message CommandComplete
+[debug] [2024-11-06T10:03:23.138Z] Frontend message Sync
+[debug] [2024-11-06T10:03:23.138Z] Backend message ReadyForQuery
+[debug] [2024-11-06T10:03:23.139Z] Frontend message Parse
+[debug] [2024-11-06T10:03:23.139Z] Backend message ParseComplete
+[debug] [2024-11-06T10:03:23.140Z] Frontend message Describe
+[debug] [2024-11-06T10:03:23.140Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-06T10:03:23.140Z] Backend message RowDescriptionMessage
+[debug] [2024-11-06T10:03:23.141Z] Frontend message Sync
+[debug] [2024-11-06T10:03:23.142Z] Backend message ReadyForQuery
+[debug] [2024-11-06T10:03:23.142Z] Frontend message Bind
+[debug] [2024-11-06T10:03:23.144Z] Backend message BindComplete
+[debug] [2024-11-06T10:03:23.144Z] Frontend message Execute
+[debug] [2024-11-06T10:03:23.145Z] Backend message CommandComplete
+[debug] [2024-11-06T10:03:23.145Z] Frontend message Sync
+[debug] [2024-11-06T10:03:23.145Z] Backend message ReadyForQuery
+[debug] [2024-11-06T10:03:23.147Z] Frontend message Parse
+[debug] [2024-11-06T10:03:23.148Z] Backend message ParseComplete
+[debug] [2024-11-06T10:03:23.148Z] Frontend message Describe
+[debug] [2024-11-06T10:03:23.148Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-06T10:03:23.149Z] Backend message RowDescriptionMessage
+[debug] [2024-11-06T10:03:23.149Z] Frontend message Sync
+[debug] [2024-11-06T10:03:23.149Z] Backend message ReadyForQuery
+[debug] [2024-11-06T10:03:23.150Z] Frontend message Bind
+[debug] [2024-11-06T10:03:23.156Z] Backend message BindComplete
+[debug] [2024-11-06T10:03:23.156Z] Frontend message Execute
+[debug] [2024-11-06T10:03:23.157Z] Backend message CommandComplete
+[debug] [2024-11-06T10:03:23.157Z] Frontend message Sync
+[debug] [2024-11-06T10:03:23.157Z] Backend message ReadyForQuery
+[debug] [2024-11-06T10:03:23.157Z] Frontend message Query
+[debug] [2024-11-06T10:03:23.158Z] Backend message RowDescriptionMessage
+[debug] [2024-11-06T10:03:23.158Z] Backend message DataRow
+[debug] [2024-11-06T10:03:23.158Z] Backend message CommandComplete
+[debug] [2024-11-06T10:03:23.158Z] Backend message ReadyForQuery
+[debug] [2024-11-06T10:03:23.159Z] Frontend message Parse
+[debug] [2024-11-06T10:03:23.159Z] Backend message ParseComplete
+[debug] [2024-11-06T10:03:23.159Z] Frontend message Describe
+[debug] [2024-11-06T10:03:23.159Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-06T10:03:23.160Z] Backend message RowDescriptionMessage
+[debug] [2024-11-06T10:03:23.160Z] Frontend message Sync
+[debug] [2024-11-06T10:03:23.160Z] Backend message ReadyForQuery
+[debug] [2024-11-06T10:03:23.160Z] Frontend message Bind
+[debug] [2024-11-06T10:03:23.161Z] Backend message BindComplete
+[debug] [2024-11-06T10:03:23.161Z] Frontend message Execute
+[debug] [2024-11-06T10:03:23.161Z] Backend message DataRow
+[debug] [2024-11-06T10:03:23.162Z] Backend message CommandComplete
+[debug] [2024-11-06T10:03:23.162Z] Frontend message Sync
+[debug] [2024-11-06T10:03:23.162Z] Backend message ReadyForQuery
+[debug] [2024-11-06T10:03:23.162Z] Frontend message Parse
+[debug] [2024-11-06T10:03:23.163Z] Backend message ParseComplete
+[debug] [2024-11-06T10:03:23.163Z] Frontend message Describe
+[debug] [2024-11-06T10:03:23.163Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-06T10:03:23.163Z] Backend message RowDescriptionMessage
+[debug] [2024-11-06T10:03:23.163Z] Frontend message Sync
+[debug] [2024-11-06T10:03:23.163Z] Backend message ReadyForQuery
+[debug] [2024-11-06T10:03:23.164Z] Frontend message Bind
+[debug] [2024-11-06T10:03:23.165Z] Backend message BindComplete
+[debug] [2024-11-06T10:03:23.165Z] Frontend message Execute
+[debug] [2024-11-06T10:03:23.165Z] Backend message CommandComplete
+[debug] [2024-11-06T10:03:23.166Z] Frontend message Sync
+[debug] [2024-11-06T10:03:23.166Z] Backend message ReadyForQuery
+[debug] [2024-11-06T10:03:23.166Z] Frontend message Parse
+[debug] [2024-11-06T10:03:23.167Z] Backend message ParseComplete
+[debug] [2024-11-06T10:03:23.167Z] Frontend message Describe
+[debug] [2024-11-06T10:03:23.167Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-06T10:03:23.167Z] Backend message RowDescriptionMessage
+[debug] [2024-11-06T10:03:23.167Z] Frontend message Sync
+[debug] [2024-11-06T10:03:23.167Z] Backend message ReadyForQuery
+[debug] [2024-11-06T10:03:23.168Z] Frontend message Bind
+[debug] [2024-11-06T10:03:23.172Z] Backend message BindComplete
+[debug] [2024-11-06T10:03:23.172Z] Frontend message Execute
+[debug] [2024-11-06T10:03:23.173Z] Backend message CommandComplete
+[debug] [2024-11-06T10:03:23.173Z] Frontend message Sync
+[debug] [2024-11-06T10:03:23.174Z] Backend message ReadyForQuery
+[debug] [2024-11-06T10:03:23.174Z] Frontend message Query
+[debug] [2024-11-06T10:03:23.175Z] Backend message RowDescriptionMessage
+[debug] [2024-11-06T10:03:23.175Z] Backend message DataRow
+[debug] [2024-11-06T10:03:23.175Z] Backend message CommandComplete
+[debug] [2024-11-06T10:03:23.175Z] Backend message ReadyForQuery
+[debug] [2024-11-06T10:03:23.176Z] I1106 17:03:23.175802   14216 control.go:45] [engine.Service /emulator/google-map af8b] UpdateSchema(): done sources: schema\schema.gql [1385B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:03:23.175802   14216 control.go:45] [engine.Service /emulator/google-map af8b] UpdateSchema(): done sources: schema\\schema.gql [1385B] \n"}}
+[debug] [2024-11-06T10:03:23.176Z] I1106 17:03:23.175802   14216 control.go:73] [engine.Service /emulator/google-map af8b] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:03:23.175802   14216 control.go:73] [engine.Service /emulator/google-map af8b] UpdateConnector(default): done sources: connector\\mutations.gql [1163B] connector\\queries.gql [1855B] \n"}}
+[debug] [2024-11-06T10:03:23.192Z] I1106 17:03:23.191750   14216 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect-generated\\js\\default-connector"
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:03:23.191750   14216 codegen.go:82] [connector \"default\" javascriptSdk] Generating sources into \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect-generated\\\\js\\\\default-connector\"\n"}}
+[debug] [2024-11-06T10:03:23.211Z] I1106 17:03:23.211566   14216 collector.go:107] schema extensions wrote into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [61293B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:03:23.211566   14216 collector.go:107] schema extensions wrote into \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect\\\\.dataconnect\\\\schema\"\nGenerated sources: prelude.gql [61293B] \n"}}
+[debug] [2024-11-06T10:03:23.214Z] I1106 17:03:23.213703   14216 collector.go:107] connector "default" javascriptSdk wrote into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect-generated\\js\\default-connector"
+Generated sources: index.cjs.js [224B] package.json [623B] index.d.ts [264B] esm\index.esm.js [183B] esm\package.json [17B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:03:23.213703   14216 collector.go:107] connector \"default\" javascriptSdk wrote into \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect-generated\\\\js\\\\default-connector\"\nGenerated sources: index.cjs.js [224B] package.json [623B] index.d.ts [264B] esm\\index.esm.js [183B] esm\\package.json [17B] \n"}}
+[debug] [2024-11-06T10:03:23.222Z] I1106 17:03:23.222220   14216 installsdk.go:76] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:03:23.222220   14216 installsdk.go:76] Running command: C:\\Program Files\\nodejs\\npm.cmd install file:dataconnect-generated\\js\\default-connector\n"}}
+[debug] [2024-11-06T10:03:25.830Z] I1106 17:03:25.829181   14216 load.go:115] Finished reloading
+I1106 17:03:25.829895   14216 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:03:25.829181   14216 load.go:115] Finished reloading\nI1106 17:03:25.829895   14216 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-11-06T10:03:25.832Z] E1106 17:03:25.832045   14216 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1106 17:03:25.832045   14216 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-11-06T10:03:25.833Z] I1106 17:03:25.832806   14216 collector.go:107] schema extensions wrote into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [61293B] 
+I1106 17:03:25.832806   14216 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:03:25.832806   14216 collector.go:107] schema extensions wrote into \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect\\\\.dataconnect\\\\schema\"\nGenerated sources: prelude.gql [61293B] \nI1106 17:03:25.832806   14216 load.go:80] Finished reloading\n"}}
+[debug] [2024-11-06T10:03:25.834Z] I1106 17:03:25.833313   14216 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:03:25.833313   14216 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-11-06T10:03:25.834Z] E1106 17:03:25.834396   14216 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1106 17:03:25.834396   14216 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-11-06T10:03:25.864Z] I1106 17:03:25.864496   14216 collector.go:107] schema extensions wrote into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [61293B] 
+I1106 17:03:25.864496   14216 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:03:25.864496   14216 collector.go:107] schema extensions wrote into \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect\\\\.dataconnect\\\\schema\"\nGenerated sources: prelude.gql [61293B] \nI1106 17:03:25.864496   14216 load.go:80] Finished reloading\n"}}
+[debug] [2024-11-06T10:03:30.455Z] I1106 17:03:30.454559   14216 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:03:30.454559   14216 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-11-06T10:03:30.457Z] E1106 17:03:30.457313   14216 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1106 17:03:30.457313   14216 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-11-06T10:03:30.460Z] I1106 17:03:30.459660   14216 collector.go:107] schema extensions wrote into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [61293B] 
+I1106 17:03:30.459660   14216 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:03:30.459660   14216 collector.go:107] schema extensions wrote into \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect\\\\.dataconnect\\\\schema\"\nGenerated sources: prelude.gql [61293B] \nI1106 17:03:30.459660   14216 load.go:80] Finished reloading\n"}}
+[debug] [2024-11-06T10:03:39.608Z] I1106 17:03:39.607580   14216 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:03:39.607580   14216 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-11-06T10:03:39.612Z] E1106 17:03:39.611909   14216 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1106 17:03:39.611909   14216 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-11-06T10:03:39.619Z] I1106 17:03:39.618275   14216 collector.go:107] schema extensions wrote into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [61293B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:03:39.618275   14216 collector.go:107] schema extensions wrote into \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect\\\\.dataconnect\\\\schema\"\nGenerated sources: prelude.gql [61293B] \n"}}
+[debug] [2024-11-06T10:03:39.619Z] I1106 17:03:39.618792   14216 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:03:39.618792   14216 load.go:80] Finished reloading\n"}}
+[debug] [2024-11-06T10:03:44.141Z] I1106 17:03:44.141126   14216 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:03:44.141126   14216 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-11-06T10:03:44.145Z] E1106 17:03:44.143741   14216 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1106 17:03:44.143741   14216 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-11-06T10:03:44.148Z] I1106 17:03:44.146841   14216 collector.go:107] schema extensions wrote into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [61293B] 
+I1106 17:03:44.146841   14216 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:03:44.146841   14216 collector.go:107] schema extensions wrote into \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect\\\\.dataconnect\\\\schema\"\nGenerated sources: prelude.gql [61293B] \nI1106 17:03:44.146841   14216 load.go:80] Finished reloading\n"}}
+[debug] [2024-11-06T10:05:09.997Z] I1106 17:05:09.996533   14216 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:05:09.996533   14216 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-11-06T10:05:10.001Z] E1106 17:05:10.001008   14216 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1106 17:05:10.001008   14216 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-11-06T10:05:10.004Z] I1106 17:05:10.003838   14216 collector.go:107] schema extensions wrote into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [61293B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:05:10.003838   14216 collector.go:107] schema extensions wrote into \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect\\\\.dataconnect\\\\schema\"\nGenerated sources: prelude.gql [61293B] \n"}}
+[debug] [2024-11-06T10:05:10.005Z] I1106 17:05:10.003838   14216 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:05:10.003838   14216 load.go:80] Finished reloading\n"}}
+[debug] [2024-11-06T10:05:52.670Z] I1106 17:05:52.669442   14216 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:05:52.669442   14216 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-11-06T10:05:52.672Z] E1106 17:05:52.670886   14216 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1106 17:05:52.670886   14216 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-11-06T10:05:52.673Z] I1106 17:05:52.671981   14216 collector.go:107] schema extensions wrote into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [61293B] 
+I1106 17:05:52.671981   14216 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:05:52.671981   14216 collector.go:107] schema extensions wrote into \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect\\\\.dataconnect\\\\schema\"\nGenerated sources: prelude.gql [61293B] \nI1106 17:05:52.671981   14216 load.go:80] Finished reloading\n"}}
+[debug] [2024-11-06T10:06:09.125Z] I1106 17:06:09.123914   14216 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:06:09.123914   14216 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-11-06T10:06:09.128Z] E1106 17:06:09.127023   14216 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1106 17:06:09.127023   14216 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-11-06T10:06:09.131Z] I1106 17:06:09.129610   14216 collector.go:107] schema extensions wrote into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [61293B] 
+I1106 17:06:09.129610   14216 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:06:09.129610   14216 collector.go:107] schema extensions wrote into \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect\\\\.dataconnect\\\\schema\"\nGenerated sources: prelude.gql [61293B] \nI1106 17:06:09.129610   14216 load.go:80] Finished reloading\n"}}
+[debug] [2024-11-06T10:06:13.958Z] I1106 17:06:13.958426   14216 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:06:13.958426   14216 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-11-06T10:06:13.963Z] E1106 17:06:13.962810   14216 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1106 17:06:13.962810   14216 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-11-06T10:06:13.965Z] I1106 17:06:13.965217   14216 collector.go:107] schema extensions wrote into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [61293B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:06:13.965217   14216 collector.go:107] schema extensions wrote into \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect\\\\.dataconnect\\\\schema\"\nGenerated sources: prelude.gql [61293B] \n"}}
+[debug] [2024-11-06T10:06:13.966Z] I1106 17:06:13.965830   14216 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:06:13.965830   14216 load.go:80] Finished reloading\n"}}
+[debug] [2024-11-06T10:06:15.052Z] I1106 17:06:15.052160   14216 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:06:15.052160   14216 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-11-06T10:06:15.053Z] E1106 17:06:15.053196   14216 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1106 17:06:15.053196   14216 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-11-06T10:06:15.054Z] I1106 17:06:15.054308   14216 collector.go:107] schema extensions wrote into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [61293B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:06:15.054308   14216 collector.go:107] schema extensions wrote into \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect\\\\.dataconnect\\\\schema\"\nGenerated sources: prelude.gql [61293B] \n"}}
+[debug] [2024-11-06T10:06:15.054Z] I1106 17:06:15.054308   14216 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1106 17:06:15.054308   14216 load.go:80] Finished reloading\n"}}
+[debug] [2024-11-06T10:10:26.160Z] Received signal SIGINT (Ctrl-C) 1
+[info]  
+[info] i  emulators: Received SIGINT (Ctrl-C) for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGINT (Ctrl-C) signal again to stop right now. 
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  dataconnect: Stopping Data Connect Emulator {"metadata":{"emulator":{"name":"dataconnect"},"message":"Stopping Data Connect Emulator"}}
+[error] !!  Data Connect: Postgres threw an unexpected error, shutting down the Data Connect emulator: Error: read ECONNRESET {"metadata":{"emulator":{"name":"dataconnect"},"message":"Postgres threw an unexpected error, shutting down the Data Connect emulator: Error: read ECONNRESET"}}
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  dataconnect: Stopping Data Connect Emulator {"metadata":{"emulator":{"name":"dataconnect"},"message":"Stopping Data Connect Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2024-11-06T10:10:26.206Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:218:20)
+[error] 
+[error] Error: An unexpected error has occurred.
+[warn] !  Data Connect Emulator has exited upon receiving signal: SIGINT 
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
+[info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
+[debug] [2024-11-07T01:37:48.667Z] ----------------------------------------------------------------------
+[debug] [2024-11-07T01:37:48.670Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\CONG PHAM\AppData\Local\npm-cache\_npx\ba4f1959e38407b5\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --project map-2ef9f
+[debug] [2024-11-07T01:37:48.670Z] CLI Version:   13.24.1
+[debug] [2024-11-07T01:37:48.670Z] Platform:      win32
+[debug] [2024-11-07T01:37:48.670Z] Node Version:  v20.17.0
+[debug] [2024-11-07T01:37:48.671Z] Time:          Thu Nov 07 2024 08:37:48 GMT+0700 (Indochina Time)
+[debug] [2024-11-07T01:37:48.671Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-07T01:37:48.747Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-07T01:37:48.748Z] > authorizing via signed-in user (huyhoang13199@gmail.com)
+[info] i  emulators: Starting emulators: dataconnect {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: dataconnect"}}
+[debug] [2024-11-07T01:37:48.765Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-07T01:37:48.766Z] [dataconnect.postgres] postgres server for dataconnect only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-07T01:37:48.766Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"dataconnect":[{"address":"127.0.0.1","family":"IPv4","port":9399},{"address":"::1","family":"IPv6","port":9399}],"dataconnect.postgres":[{"address":"127.0.0.1","family":"IPv4","port":5432}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-11-07T01:37:48.770Z] [hub] writing locator at C:\Users\CONGPH~1\AppData\Local\Temp\hub-map-2ef9f.json
+[debug] [2024-11-07T01:37:48.907Z] I1107 08:37:48.897792   11796 control.go:45] [engine.Service /emulator/google-map 2c19] UpdateSchema(): done sources: schema\schema.gql [1383B] 
+I1107 08:37:48.903404   11796 control.go:73] [engine.Service /emulator/google-map 2c19] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1107 08:37:48.897792   11796 control.go:45] [engine.Service /emulator/google-map 2c19] UpdateSchema(): done sources: schema\\schema.gql [1383B] \nI1107 08:37:48.903404   11796 control.go:73] [engine.Service /emulator/google-map 2c19] UpdateConnector(default): done sources: connector\\mutations.gql [1163B] connector\\queries.gql [1855B] \n"}}
+[debug] [2024-11-07T01:37:48.923Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-07T01:37:48.923Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-11-07T01:37:48.923Z] Starting Data Connect Emulator with command {"binary":"C:\\Users\\CONG PHAM\\.cache\\firebase\\emulators\\dataconnect-emulator-1.6.0.exe","args":["--logtostderr","-v=2","dev","--listen=127.0.0.1:9399,[::1]:9399","--config_dir=C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"C:\\\\Users\\\\CONG PHAM\\\\.cache\\\\firebase\\\\emulators\\\\dataconnect-emulator-1.6.0.exe\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=127.0.0.1:9399,[::1]:9399\",\"--config_dir=C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to \u001b[1mdataconnect-debug.log\u001b[22m"}}
+[debug] [2024-11-07T01:37:48.955Z] I1107 08:37:48.954171   17388 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1107 08:37:48.954171   17388 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-11-07T01:37:49.006Z] I1107 08:37:48.963603   17388 control.go:45] [engine.Service /emulator/google-map 4993] UpdateSchema(): done sources: schema\schema.gql [1383B] 
+I1107 08:37:48.969109   17388 control.go:73] [engine.Service /emulator/google-map 4993] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+I1107 08:37:48.987126   17388 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect-generated\\js\\default-connector"
+I1107 08:37:48.988765   17388 collector.go:107] schema extensions wrote into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [61293B] 
+I1107 08:37:48.988765   17388 collector.go:114] schema extensions deleted obsolete file "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect\\.dataconnect\\schema\\schema.gql"
+I1107 08:37:48.991793   17388 collector.go:107] connector "default" javascriptSdk wrote into "C:\\Users\\CONG PHAM\\Desktop\\Project\\google-map\\dataconnect-generated\\js\\default-connector"
+Generated sources: index.cjs.js [224B] package.json [623B] index.d.ts [264B] esm\index.esm.js [183B] esm\package.json [17B] 
+I1107 08:37:49.001048   17388 installsdk.go:76] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1107 08:37:48.963603   17388 control.go:45] [engine.Service /emulator/google-map 4993] UpdateSchema(): done sources: schema\\schema.gql [1383B] \nI1107 08:37:48.969109   17388 control.go:73] [engine.Service /emulator/google-map 4993] UpdateConnector(default): done sources: connector\\mutations.gql [1163B] connector\\queries.gql [1855B] \nI1107 08:37:48.987126   17388 codegen.go:82] [connector \"default\" javascriptSdk] Generating sources into \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect-generated\\\\js\\\\default-connector\"\nI1107 08:37:48.988765   17388 collector.go:107] schema extensions wrote into \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect\\\\.dataconnect\\\\schema\"\nGenerated sources: prelude.gql [61293B] \nI1107 08:37:48.988765   17388 collector.go:114] schema extensions deleted obsolete file \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect\\\\.dataconnect\\\\schema\\\\schema.gql\"\nI1107 08:37:48.991793   17388 collector.go:107] connector \"default\" javascriptSdk wrote into \"C:\\\\Users\\\\CONG PHAM\\\\Desktop\\\\Project\\\\google-map\\\\dataconnect-generated\\\\js\\\\default-connector\"\nGenerated sources: index.cjs.js [224B] package.json [623B] index.d.ts [264B] esm\\index.esm.js [183B] esm\\package.json [17B] \nI1107 08:37:49.001048   17388 installsdk.go:76] Running command: C:\\Program Files\\nodejs\\npm.cmd install file:dataconnect-generated\\js\\default-connector\n"}}
+[debug] [2024-11-07T01:37:50.536Z] [Data Connect] Connecting to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}...
+[debug] [2024-11-07T01:37:50.539Z] >>> [apiv2][query] POST http://127.0.0.1:9399/emulator/configure [none]
+[debug] [2024-11-07T01:37:50.539Z] >>> [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {"connectionString":"postgres://127.0.0.1:5432/fdcdb?sslmode=disable","database":"fdcdb","serviceId":"google-map","maxOpenConnections":1}
+[debug] [2024-11-07T01:37:50.546Z] *** [apiv2] error from fetch(http://127.0.0.1:9399/emulator/configure, {"headers":{},"method":"POST","body":"{\"connectionString\":\"postgres://127.0.0.1:5432/fdcdb?sslmode=disable\",\"database\":\"fdcdb\",\"serviceId\":\"google-map\",\"maxOpenConnections\":1}"}): FetchError: request to http://127.0.0.1:9399/emulator/configure failed, reason: connect ECONNREFUSED 127.0.0.1:9399
+[debug] [2024-11-07T01:37:50.546Z] [Data Connect] Retrying connectToPostgress call (1 of 3 attempts): FirebaseError: Data Connect emulator: undefined
+[debug] [2024-11-07T01:37:51.775Z] I1107 08:37:51.775502   17388 load.go:115] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1107 08:37:51.775502   17388 load.go:115] Finished reloading\n"}}
+[debug] [2024-11-07T01:37:51.776Z] I1107 08:37:51.777083   17388 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1107 08:37:51.777083   17388 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399\n"}}
+[debug] [2024-11-07T01:37:51.777Z] I1107 08:37:51.777083   17388 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1107 08:37:51.777083   17388 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399\n"}}
+[debug] [2024-11-07T01:37:52.548Z] [Data Connect] Connecting to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}...
+[debug] [2024-11-07T01:37:52.548Z] >>> [apiv2][query] POST http://127.0.0.1:9399/emulator/configure [none]
+[debug] [2024-11-07T01:37:52.548Z] >>> [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {"connectionString":"postgres://127.0.0.1:5432/fdcdb?sslmode=disable","database":"fdcdb","serviceId":"google-map","maxOpenConnections":1}
+[debug] [2024-11-07T01:37:52.555Z] Frontend message 
+[debug] [2024-11-07T01:37:52.557Z] Backend message AuthenticationResponse
+[debug] [2024-11-07T01:37:52.558Z] Backend message ParameterStatus
+[debug] [2024-11-07T01:37:52.558Z] Backend message ReadyForQuery
+[debug] [2024-11-07T01:37:52.559Z] Frontend message Query
+[debug] [2024-11-07T01:37:52.560Z] Backend message EmptyQuery
+[debug] [2024-11-07T01:37:52.560Z] Backend message ReadyForQuery
+[debug] [2024-11-07T01:37:52.568Z] Frontend message Query
+[debug] [2024-11-07T01:37:52.572Z] Backend message RowDescriptionMessage
+[debug] [2024-11-07T01:37:52.573Z] Backend message DataRow
+[debug] [2024-11-07T01:37:52.573Z] Backend message CommandComplete
+[debug] [2024-11-07T01:37:52.573Z] Backend message ReadyForQuery
+[debug] [2024-11-07T01:37:52.574Z] Frontend message Parse
+[debug] [2024-11-07T01:37:52.575Z] Backend message ParseComplete
+[debug] [2024-11-07T01:37:52.575Z] Frontend message Describe
+[debug] [2024-11-07T01:37:52.575Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-07T01:37:52.575Z] Backend message RowDescriptionMessage
+[debug] [2024-11-07T01:37:52.575Z] Frontend message Sync
+[debug] [2024-11-07T01:37:52.576Z] Backend message ReadyForQuery
+[debug] [2024-11-07T01:37:52.576Z] Frontend message Bind
+[debug] [2024-11-07T01:37:52.576Z] Backend message BindComplete
+[debug] [2024-11-07T01:37:52.577Z] Frontend message Execute
+[debug] [2024-11-07T01:37:52.578Z] Backend message DataRow
+[debug] [2024-11-07T01:37:52.578Z] Backend message CommandComplete
+[debug] [2024-11-07T01:37:52.578Z] Frontend message Sync
+[debug] [2024-11-07T01:37:52.578Z] Backend message ReadyForQuery
+[debug] [2024-11-07T01:37:52.579Z] Frontend message Parse
+[debug] [2024-11-07T01:37:52.579Z] Backend message ParseComplete
+[debug] [2024-11-07T01:37:52.579Z] Frontend message Describe
+[debug] [2024-11-07T01:37:52.580Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-07T01:37:52.580Z] Backend message RowDescriptionMessage
+[debug] [2024-11-07T01:37:52.580Z] Frontend message Sync
+[debug] [2024-11-07T01:37:52.580Z] Backend message ReadyForQuery
+[debug] [2024-11-07T01:37:52.580Z] Frontend message Bind
+[debug] [2024-11-07T01:37:52.581Z] Backend message BindComplete
+[debug] [2024-11-07T01:37:52.581Z] Frontend message Execute
+[debug] [2024-11-07T01:37:52.581Z] Backend message CommandComplete
+[debug] [2024-11-07T01:37:52.581Z] Frontend message Sync
+[debug] [2024-11-07T01:37:52.582Z] Backend message ReadyForQuery
+[debug] [2024-11-07T01:37:52.582Z] Frontend message Parse
+[debug] [2024-11-07T01:37:52.583Z] Backend message ParseComplete
+[debug] [2024-11-07T01:37:52.583Z] Frontend message Describe
+[debug] [2024-11-07T01:37:52.583Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-07T01:37:52.583Z] Backend message RowDescriptionMessage
+[debug] [2024-11-07T01:37:52.583Z] Frontend message Sync
+[debug] [2024-11-07T01:37:52.584Z] Backend message ReadyForQuery
+[debug] [2024-11-07T01:37:52.584Z] Frontend message Bind
+[debug] [2024-11-07T01:37:52.589Z] Backend message BindComplete
+[debug] [2024-11-07T01:37:52.589Z] Frontend message Execute
+[debug] [2024-11-07T01:37:52.589Z] Backend message CommandComplete
+[debug] [2024-11-07T01:37:52.590Z] Frontend message Sync
+[debug] [2024-11-07T01:37:52.590Z] Backend message ReadyForQuery
+[debug] [2024-11-07T01:37:52.591Z] Frontend message Query
+[debug] [2024-11-07T01:37:52.591Z] Backend message RowDescriptionMessage
+[debug] [2024-11-07T01:37:52.591Z] Backend message DataRow
+[debug] [2024-11-07T01:37:52.592Z] Backend message CommandComplete
+[debug] [2024-11-07T01:37:52.592Z] Backend message ReadyForQuery
+[debug] [2024-11-07T01:37:52.592Z] Frontend message Parse
+[debug] [2024-11-07T01:37:52.593Z] Backend message ParseComplete
+[debug] [2024-11-07T01:37:52.593Z] Frontend message Describe
+[debug] [2024-11-07T01:37:52.593Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-07T01:37:52.593Z] Backend message RowDescriptionMessage
+[debug] [2024-11-07T01:37:52.593Z] Frontend message Sync
+[debug] [2024-11-07T01:37:52.594Z] Backend message ReadyForQuery
+[debug] [2024-11-07T01:37:52.594Z] Frontend message Bind
+[debug] [2024-11-07T01:37:52.594Z] Backend message BindComplete
+[debug] [2024-11-07T01:37:52.594Z] Frontend message Execute
+[debug] [2024-11-07T01:37:52.595Z] Backend message DataRow
+[debug] [2024-11-07T01:37:52.595Z] Backend message CommandComplete
+[debug] [2024-11-07T01:37:52.595Z] Frontend message Sync
+[debug] [2024-11-07T01:37:52.595Z] Backend message ReadyForQuery
+[debug] [2024-11-07T01:37:52.595Z] Frontend message Parse
+[debug] [2024-11-07T01:37:52.596Z] Backend message ParseComplete
+[debug] [2024-11-07T01:37:52.596Z] Frontend message Describe
+[debug] [2024-11-07T01:37:52.596Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-07T01:37:52.596Z] Backend message RowDescriptionMessage
+[debug] [2024-11-07T01:37:52.596Z] Frontend message Sync
+[debug] [2024-11-07T01:37:52.596Z] Backend message ReadyForQuery
+[debug] [2024-11-07T01:37:52.597Z] Frontend message Bind
+[debug] [2024-11-07T01:37:52.597Z] Backend message BindComplete
+[debug] [2024-11-07T01:37:52.598Z] Frontend message Execute
+[debug] [2024-11-07T01:37:52.598Z] Backend message CommandComplete
+[debug] [2024-11-07T01:37:52.598Z] Frontend message Sync
+[debug] [2024-11-07T01:37:52.598Z] Backend message ReadyForQuery
+[debug] [2024-11-07T01:37:52.598Z] Frontend message Parse
+[debug] [2024-11-07T01:37:52.599Z] Backend message ParseComplete
+[debug] [2024-11-07T01:37:52.599Z] Frontend message Describe
+[debug] [2024-11-07T01:37:52.599Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-07T01:37:52.599Z] Backend message RowDescriptionMessage
+[debug] [2024-11-07T01:37:52.599Z] Frontend message Sync
+[debug] [2024-11-07T01:37:52.599Z] Backend message ReadyForQuery
+[debug] [2024-11-07T01:37:52.600Z] Frontend message Bind
+[debug] [2024-11-07T01:37:52.603Z] Backend message BindComplete
+[debug] [2024-11-07T01:37:52.603Z] Frontend message Execute
+[debug] [2024-11-07T01:37:52.603Z] Backend message CommandComplete
+[debug] [2024-11-07T01:37:52.603Z] Frontend message Sync
+[debug] [2024-11-07T01:37:52.603Z] Backend message ReadyForQuery
+[debug] [2024-11-07T01:37:52.604Z] Frontend message Query
+[debug] [2024-11-07T01:37:52.604Z] Backend message RowDescriptionMessage
+[debug] [2024-11-07T01:37:52.605Z] Backend message DataRow
+[debug] [2024-11-07T01:37:52.605Z] Backend message CommandComplete
+[debug] [2024-11-07T01:37:52.605Z] Backend message ReadyForQuery
+[debug] [2024-11-07T01:37:52.605Z] I1107 08:37:52.605936   17388 control.go:45] [engine.Service /emulator/google-map 1727] UpdateSchema(): done sources: schema\schema.gql [1383B] 
+I1107 08:37:52.606447   17388 control.go:73] [engine.Service /emulator/google-map 1727] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1107 08:37:52.605936   17388 control.go:45] [engine.Service /emulator/google-map 1727] UpdateSchema(): done sources: schema\\schema.gql [1383B] \nI1107 08:37:52.606447   17388 control.go:73] [engine.Service /emulator/google-map 1727] UpdateConnector(default): done sources: connector\\mutations.gql [1163B] connector\\queries.gql [1855B] \n"}}
+[debug] [2024-11-07T01:37:52.614Z] <<< [apiv2][status] POST http://127.0.0.1:9399/emulator/configure 200
+[debug] [2024-11-07T01:37:52.614Z] <<< [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {}
+[debug] [2024-11-07T01:37:52.614Z] [Data Connect] Successfully connected to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[debug] [2024-11-07T01:37:52.619Z] >>> [apiv2][query] GET http://127.0.0.1:9399/emulator/info [none]
+[debug] [2024-11-07T01:37:52.622Z] <<< [apiv2][status] GET http://127.0.0.1:9399/emulator/info 200
+[debug] [2024-11-07T01:37:52.622Z] <<< [apiv2][body] GET http://127.0.0.1:9399/emulator/info {"version":"","services":[{"serviceId":"google-map","connectionString":"dbname='fdcdb' host='127.0.0.1' port='5432' sslmode='disable' dbname='fdcdb'"}]}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────────┬────────────────┐
+│ Emulator     │ Host:Port      │
+├──────────────┼────────────────┤
+│ Data Connect │ 127.0.0.1:9399 │
+└──────────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
