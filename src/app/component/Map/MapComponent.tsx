@@ -65,13 +65,13 @@ const MapComponent = () => {
         />
         {searchPosition && (
           <LocationSearch
-            key={`${searchPosition[0]}-${searchPosition[1]}-${Date.now() + 1}`}
+            key={`${searchPosition.lat}-${searchPosition.lng}-${Date.now() + 1}`}
             positionNewSearch={[searchPosition.lat, searchPosition.lng]}
           />
         )}
         {searchPosition && (
           <ProvinceSearch
-            key={`${searchPosition[0]}-${searchPosition[1]}-${Date.now()}`}
+            key={`${searchPosition.lat}-${searchPosition.lng}-${Date.now()}`}
             positionNewSearch={searchPosition}
           />
         )}

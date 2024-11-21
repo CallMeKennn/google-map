@@ -6,7 +6,7 @@ import { Drawer } from "@mui/material";
 import DrawerComponent from "./component/Drawer/Drawer";
 import "leaflet/dist/leaflet.css";
 import MapComponent from "./component/Map/MapComponent";
-import SearchLocation from "./component/SearchLocation/SearchLocation";
+import SearchLocation from "./component/SearchInput/SearchInput";
 import addProvincesToFirestore from "./data/actions/addProvince";
 import getProvinces from "./data/actions/getProvinces";
 
